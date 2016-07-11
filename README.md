@@ -36,13 +36,13 @@ See the version shield? That's what i use to detect versions.
 So now we now that how do we proceed.
 
 0k configuring (atm) is a b*atch so here we go:
-	- Rename 'gitupdate.py' to something pretty.
-	  (this is where you start your program from)
-	- Complete the 'def _start_app()' to your liking.
-	- Configure 'config.py'.
-		* master_url > Point this to the raw Readme usually,
-		  'https://raw.githubusercontent.com/USERNAME/REPOSITORY/master/README.md'.
-		* zip_url > Point to a zip of your project usually,'https://github.com/USERNAME/REPOSITORY/zipball/master'.
+
+- Rename 'gitupdate.py' to something pretty.
+(this is where you start your program from)
+- Complete the 'def _start_app()' to your liking.
+- Configure 'config.py'.
+* master_url > Point this to the raw Readme usually,'https://raw.githubusercontent.com/USERNAME/REPOSITORY/master/README.md'.
+* zip_url > Point to a zip of your project usually,'https://github.com/USERNAME/REPOSITORY/zipball/master'.
 
 ## Todo
 
