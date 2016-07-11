@@ -21,9 +21,6 @@ First of all, for this system to work you need 3 things:
 
 ## Use 
 
-The standard
--------------
-
 I use this as a head for my readme's:
 
 ![Mac](https://img.shields.io/badge/OS X-Untested-lightgrey.svg)
