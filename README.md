@@ -31,7 +31,7 @@ I use this as a head for my readme's:
 ![Repo size](https://reposs.herokuapp.com/?path=)
 
 See the version shield? That's what i use to detect versions.
-So now we now that how do we proceed.
+So now we know that, how do we proceed?
 
 0k configuring is always a pain, so here we go:
 
