@@ -3,7 +3,7 @@
 ![Linux](https://img.shields.io/badge/Linux-Untested-lightgrey.svg)
 ![Version](https://img.shields.io/badge/Version-1.0.0/dev-brightgreen.svg)
 ![Development](https://img.shields.io/badge/Development-busy-brightgreen.svg)
-![Repo size](https://reposs.herokuapp.com/?path='riptide00/gitupdate')
+![Repo size](https://reposs.herokuapp.com/?path=riptide00/gitupdate)
 
 # Github Auto-Update (and installation...)
 
