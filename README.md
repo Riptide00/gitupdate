@@ -14,9 +14,10 @@
 ## Description
 
 First of all, for this system to work you need 3 things:
-	1. Add 'requests' to the requirements.txt of your project
-	2. A github repository
-	3. A standard for 'Readme' files
+
+1. Add 'requests' to the requirements.txt of your project
+2. A github repository
+3. A standard for 'Readme' files
 
 ## Use 
 
