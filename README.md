@@ -33,7 +33,7 @@ I use this as a head for my readme's:
 See the version shield? That's what i use to detect versions.
 So now we now that how do we proceed.
 
-0k configuring (atm) is a b*atch so here we go:
+0k configuring (atm) is always a pain, so here we go:
 
 - Rename 'gitupdate.py' to something pretty. (this is where you start your program from)
 - Complete the 'def _start_app()' to your liking.
