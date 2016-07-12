@@ -1,8 +1,8 @@
 ![Mac](https://img.shields.io/badge/OS X-Untested-lightgrey.svg)
 ![Windows](https://img.shields.io/badge/Windows-Untested-brightgreen.svg)
 ![Linux](https://img.shields.io/badge/Linux-Untested-lightgrey.svg)
-![Version](https://img.shields.io/badge/Version-1.0.0/dev-brightgreen.svg)
 ![Development](https://img.shields.io/badge/Development-busy-brightgreen.svg)
+![Version](https://img.shields.io/badge/Latest-1.0.0/dev-blue.svg)
 ![Repo size](https://reposs.herokuapp.com/?path=riptide00/gitupdate)
 
 # Github Auto-Update (and installation...)
@@ -26,8 +26,8 @@ I use this as a head for my readme's:
 ![Mac](https://img.shields.io/badge/OS X-Untested-lightgrey.svg)
 ![Windows](https://img.shields.io/badge/Windows-Untested-lightgrey.svg)
 ![Linux](https://img.shields.io/badge/Linux-Untested-lightgrey.svg)
-![Version](https://img.shields.io/badge/Version-1.0.0/dev-brightgreen.svg)
 ![Development](https://img.shields.io/badge/Development-halted-lightgrey.svg)
+![Version](https://img.shields.io/badge/Latest-1.0.0/dev-blue.svg)
 ![Repo size](https://reposs.herokuapp.com/?path=)
 
 See the version shield? That's what i use to detect versions.

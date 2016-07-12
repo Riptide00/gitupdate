@@ -13,10 +13,10 @@ def check():
 def _get_remote_version():
     """Check wich version remote repo is at."""
     page = requests.get(config.master_url)
-    line = page.text.split()[4]
-    version = line.split('/')[4]
-    version_number = version.split('-')[1]
-    return version_number
+    line = page.text.split()[5]
+    latest = line.split('/')[4]
+    latest_number = latest.split('-')[1]
+    return latest_number
 
 
 def _get_local_version():
@@ -27,7 +27,7 @@ def _get_local_version():
     except:
         _install()
         return
-    line = f.readlines()[4]
+    line = f.readlines()[5]
     version = line.split('/')[4]
     version_number = version.split('-')[1]
     return version_number
