@@ -1,5 +1,5 @@
 ![Mac](https://img.shields.io/badge/OS X-Untested-lightgrey.svg)
-![Windows](https://img.shields.io/badge/Windows-Untested-brightgreen.svg)
+![Windows](https://img.shields.io/badge/Windows-Tested-brightgreen.svg)
 ![Linux](https://img.shields.io/badge/Linux-Untested-lightgrey.svg)
 ![Development](https://img.shields.io/badge/Development-busy-brightgreen.svg)
 ![Version](https://img.shields.io/badge/Latest-1.0.0/dev-blue.svg)
