@@ -3,11 +3,27 @@ import config
 import requests
 import zipfile
 import shutil
+import os
 
 
-def check():
+def gitupdate():
     """Public method."""
-    _compare(_get_local_version(), _get_remote_version())
+    _setup()
+    local = _get_local_version()
+    remote = _get_remote_version()
+    if local is 0:
+        print("No application found, installing...")
+        _install()
+    else:
+        if not _compare(local, remote):
+            print("Update available!")
+            print("Do you want to update?")
+            if _yn_prompt():
+                print("Updating...")
+                _install()
+    print("Done!")
+    _start_app()
+
 
 
 def _get_remote_version():
@@ -25,8 +41,7 @@ def _get_local_version():
     try:
         f = open(readme, "r")
     except:
-        _install()
-        return
+        return 0
     line = f.readlines()[5]
     version = line.split('/')[4]
     version_number = version.split('-')[1]
@@ -36,44 +51,31 @@ def _get_local_version():
 def _compare(local, remote):
     """Compare versions."""
     if local == remote:
-        print("Your app is up-to-date.")
-        _start_app()
+        return True
     else:
-        _update()
-
-
-def _update():
-    """Update app."""
-    print("Update available!")
-    print("Do you want to update?")
-    if _yn_prompt():
-        print("Updating...")
-        _install()
-        print("Done!")
-    else:
-        _start_app()
+        return False
 
 
 def _download():
     """Download remote repo."""
     url = config.zip_url
-    local_filename = 'temp/' + url.split('/')[-1] + '.zip'
+    local_filename = 'temp/' + url.split('/')[-1]
+    print(local_filename)
     r = requests.get(url, stream=True)
     with open(local_filename, 'wb') as f:
         for chunk in r.iter_content(chunk_size=1024):
             if chunk:
                 f.write(chunk)
-    return local_filename
 
 
-def _remove_old_app():
-    """Remove old app."""
-    shutil.rmtree('app/')
+def _remove_directory(rdir):
+    """Remove directoy."""
+    shutil.rmtree(rdir)
 
 
 def _unzip():
     """Unzip downloaded repo."""
-    nn = ""
+    nn = "IGT-master"
     with zipfile.ZipFile('temp/master.zip', "r") as z:
         z.extractall("temp/")
         nn = z.namelist()[0].split('/')[0]
@@ -99,11 +101,26 @@ def _start_app():
 
 def _install():
     """Install app."""
-    _remove_old_app()
+    _remove_directory('app/')
     _download()
     _unzip()
+    _remove_directory('temp/')
 
+
+def _setup():
+    """Ensure existance of directories."""
+    app = "app/"
+    temp = "temp/"
+    dir_app = os.path.dirname(app)
+    dir_temp = os.path.dirname(temp)
+    try:
+        os.stat(dir_app)
+    except:
+        os.mkdir(dir_app)
+    try:
+        os.stat(dir_temp)
+    except:
+        os.mkdir(dir_temp)
 
 if __name__ == '__main__':
-    print("Auto-updating module.")
-    check()
+    gitupdate()

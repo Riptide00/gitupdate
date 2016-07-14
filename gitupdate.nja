@@ -1,0 +1,29 @@
+{
+  "mainFile": "C:/Users/Riptide00/Desktop/Projects/Gists/Python/gitupdate/gitupdate.py", 
+  "use-tabs": false, 
+  "venv": "C:\\Users\\Riptide00\\Desktop\\Projects\\My_gists\\Python\\venv\\Scripts\\python.exe", 
+  "relatedProjects": [], 
+  "name": "gitupdate", 
+  "license": "MIT License", 
+  "url": "", 
+  "pythonPath": "python", 
+  "preExecScript": "", 
+  "additional_builtins": [], 
+  "programParams": "", 
+  "indentation": 4, 
+  "PYTHONPATH": "", 
+  "supported-extensions": [
+    ".py", 
+    ".html", 
+    ".jpg", 
+    ".png", 
+    ".ui", 
+    ".css", 
+    ".json", 
+    ".js", 
+    ".ini"
+  ], 
+  "project-type": "", 
+  "postExecScript": "", 
+  "description": ""
+}
