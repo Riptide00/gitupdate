@@ -88,5 +88,10 @@ ENV/
 # Rope project settings
 .ropeproject
 
+# Custom
+
 # Ninja IDE
 .nja
+
+# Idea
+.idea/
