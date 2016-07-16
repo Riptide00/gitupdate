@@ -28,7 +28,7 @@ def gitupdate():
 
 def _get_remote_version():
     """Check wich version remote repo is at."""
-    page = requests.get(config.master_url)
+    page = requests.get(config.readme_url)
     line = page.text.split()[5]
     latest = line.split('/')[4]
     latest_number = latest.split('-')[1]
