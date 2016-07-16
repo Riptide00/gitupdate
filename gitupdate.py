@@ -17,8 +17,7 @@ def gitupdate():
     else:
         if not _compare(local, remote):
             print("Update available!")
-            print("Do you want to update?")
-            if _yn_prompt():
+            if _yn_prompt("Do you want to update?"):
                 print("Updating...")
                 _install()
     print("Done!")
@@ -83,9 +82,10 @@ def _unzip():
     shutil.copytree(copy_these, 'app/')
 
 
-def _yn_prompt():
+def _yn_prompt(question):
     """Yes/no prompt."""
-    i = input("y/n: ")
+    i = input(question + " y/n: ")
+    i = i.lower()
     if i == "y":
         return True
     elif i == "n":
