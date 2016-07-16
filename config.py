@@ -1,3 +1,3 @@
 """Configuration for auto updating module."""
-master_url = ""
+readme_url = ""
 zip_url = ""
