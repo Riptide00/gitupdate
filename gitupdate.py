@@ -26,7 +26,7 @@ def gitupdate():
 
 
 def _get_remote_version():
-    """Check wich version remote repo is at."""
+    """Check which version remote repo is at."""
     page = requests.get(config.readme_url)
     line = page.text.split()[5]
     latest = line.split('/')[4]
@@ -35,7 +35,7 @@ def _get_remote_version():
 
 
 def _get_local_version():
-    """Check wich version local app is at."""
+    """Check which version local app is at."""
     readme = "app/README.md"
     try:
         f = open(readme, "r")
@@ -108,7 +108,7 @@ def _install():
 
 
 def _setup():
-    """Ensure existance of directories."""
+    """Ensure existence of directories."""
     app = "app/"
     temp = "temp/"
     dir_app = os.path.dirname(app)
